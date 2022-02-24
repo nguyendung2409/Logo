@@ -1,0 +1,94 @@
+/* .time-open {
+} */
+.time-open .left-content {
+  background: var(--green-dark);
+  padding: 80px 56px 96px 65px;
+  position: relative;
+}
+.time-open .left-content::before {
+  content: '';
+  background-image: url('../images/vector_datban.png');
+  position: absolute;
+  width: 225px;
+  height: 201px;
+  bottom: 0;
+  right: 10px;
+}
+.time-open .left-content .time-heading {
+  margin-bottom: 50px;
+}
+.time-open .left-content .time-heading .title {
+  color: var(--white-color);
+  font-family: 'UTM Bebas';
+  font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.time-open .left-content .time-heading .title::before {
+  content: '';
+  background-image: url('../images/title_base_2.png');
+  width: 160px;
+  height: 27px;
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+}
+.time-open .left-content .time-heading .desc {
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+/* .time-open .left-content .time-bottom {
+} */
+.time-open .left-content .time-bottom .time {
+  color: var(--white-color);
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 15px;
+}
+.time-open .left-content .time-bottom .action {
+  display: inline-block;
+  padding: 12px 32px;
+  font-size: 16px;
+  color: var(--green-dark);
+  font-weight: 600;
+  background-color: var(--white-color);
+  border-radius: 100rem;
+  border: 1px solid #fff;
+  transition: 0.25s all;
+}
+.time-open .left-content .time-bottom .action:hover {
+  background-color: var(--green-dark);
+  color: var(--white-color);
+}
+.time-open .right-content {
+  background-image: url('../images/banner_time_open.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin-left: -30px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .p0 {
+    padding: 0;
+  }
+  .time-open .left-content {
+    padding: 30px 15px;
+  }
+  .time-open .left-content .time-heading {
+    margin-bottom: 10px;
+  }
+  .time-open .left-content .time-heading .title {
+    font-size: 28px;
+  }
+  .time-open .left-content::before {
+    background-size: contain;
+    width: 115px;
+    height: 104px;
+  }
+}

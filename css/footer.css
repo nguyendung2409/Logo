@@ -1,0 +1,153 @@
+.footer {
+  background-image: url('../images/bg_footer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 95px;
+  padding-bottom: 25px;
+}
+.footer .footer-top {
+  padding-bottom: 80px;
+}
+/* .footer .footer-logo {
+  margin-bottom: 30px;
+} */
+.footer .footer-logo .desc {
+  color: #dfdfdf;
+  font-size: 16px;
+  margin: 27px 0 15px;
+  font-weight: 500;
+}
+.footer .menu {
+  display: flex;
+  gap: 0 20px;
+}
+.footer .menu .menu-item .menu-link {
+  color: var(--green-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 100rem;
+  font-size: 16px;
+
+  transition: 0.25s all;
+}
+.footer .menu .menu-item .menu-link:hover {
+  background-color: var(--white-color);
+}
+.footer .title {
+  margin-bottom: 20px;
+}
+.footer .title > a {
+  color: var(--green-dark);
+
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer .footer-contact {
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+.footer .footer-contact .location {
+  display: flex;
+  align-items: flex-start;
+  gap: 0 10px;
+  margin-bottom: 15px;
+}
+.footer .footer-contact .location i {
+  color: var(--green-dark);
+  font-size: 18px;
+}
+.footer .footer-contact .location span {
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer .footer-contact .phone {
+  display: flex;
+  align-items: flex-start;
+  gap: 0 10px;
+}
+.footer .footer-contact .phone i {
+  color: var(--green-dark);
+  font-size: 18px;
+}
+.footer .footer-contact .phone span {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white-color);
+}
+.footer .footer-contact .phone .phone-number {
+  color: var(--white-color);
+}
+.footer .footer-register {
+  margin-top: 60px;
+}
+.footer .footer-register .desc {
+  color: var(--white-color);
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.footer .footer-register .form-submit {
+  width: 100%;
+}
+.footer .footer-register .form-submit .input-form {
+  width: 100%;
+  position: relative;
+}
+.footer .footer-register .form-submit .input-form input {
+  height: 60px;
+  padding-left: 20px;
+  border-radius: 100rem;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+}
+.footer .footer-register .form-submit .input-form button {
+  background-color: var(--green-dark);
+  height: 60px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 40px;
+  border-radius: 100rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.footer .footer-copyright {
+  color: #dfdfdf;
+  font-weight: 500;
+  padding-top: 20px;
+  border-top: 1px solid #dfdfdf;
+  text-align: center;
+}
+.footer .footer-copyright a {
+  color: var(--green-dark);
+}
+@media screen and (max-width: 767.98px) {
+  .footer .footer-register {
+    margin-top: 30px;
+  }
+  .footer .footer-contact {
+    margin-top: 30px;
+  }
+  .footer .title > a {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* .footer .footer-register .form-submit .input-form button {
+    position: relative;
+    margin-top: 20px;
+  } */
+  .footer {
+    padding-top: 50px;
+  }
+}
+
