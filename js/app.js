@@ -171,6 +171,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Increase , decrease product quantity
 const iconTimes = document.querySelector('.remove-cart');
 const cartElement = document.querySelector('.cart-desc');
 const productCount = document.querySelector('.product-count');
