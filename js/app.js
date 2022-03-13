@@ -1,195 +1,93 @@
-const iconPlus = document.querySelector('.toggle-menu');
-const menuChild = document.querySelector('.header-mobile .menu .menu-child');
-const menu = document.querySelector('.header-mobile .menu');
+const menu = document.querySelector('.header-bottom .menu');
 const iconBars = document.querySelector('.menu-toggle');
 const activeClass = 'is-show';
-iconPlus.addEventListener('click', () => {
-  menuChild.classList.toggle(activeClass);
-});
+const iconPlusList = document.querySelectorAll('.toggle-menu');
 iconBars.addEventListener('click', () => {
-  menu.classList.add(activeClass);
+  menu.classList.toggle(activeClass);
+  iconBars.classList.toggle(activeClass);
 });
 document.addEventListener('click', (event) => {
   if (!iconBars.contains(event.target) && !menu.contains(event.target)) {
     menu.classList.remove(activeClass);
+    iconBars.classList.remove(activeClass);
   }
 });
 
-// Tab
-const tabs = document.querySelectorAll('.tab-item');
-const tabContents = document.querySelectorAll('.tab-content');
-function handleTabChange(e) {
-  const tabId = e.target.dataset.tab;
-  tabs.forEach((tab) => tab.classList.remove('active'));
-  e.target.classList.add('active');
-  tabContents.forEach((tabContent) => {
-    tabContent.classList.remove('active');
-    if (tabContent.dataset.tab === tabId) tabContent.classList.add('active');
+[...iconPlusList].forEach((iconPlus) => {
+  iconPlus?.addEventListener('click', (e) => {
+    const menuChild = e.target.parentElement.nextElementSibling;
+    iconPlus.classList.toggle(activeClass);
+    menuChild.classList.toggle(activeClass);
   });
-}
-tabs.forEach((tab) => tab.addEventListener('click', handleTabChange));
-
-// Slider
-
+});
 $(document).ready(function () {
-  $('.slider-list').slick({
+  $('.banner-list').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
-    dots: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          arrows: false,
-          slidesToShow: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          arrows: false,
-          slidesToShow: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        },
-      },
-    ],
-  });
-
-  $('.category-list').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    arrows: false,
     dots: true,
-    responsive: [
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-    ],
-  });
-
-  $('.picture-list').slick({
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
     arrows: false,
-    dots: false,
-    responsive: [
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-    ],
+    autoplay: true,
+    autoplaySpeed: 5000,
   });
-
-  $('.news-list').slick({
+  $('.product-img-list').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: false,
-    dots: false,
+    arrows: true,
+    prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa fa-angle-left"></i></button>`,
+    nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa  fa-angle-right"></i></button>`,
     responsive: [
       {
-        breakpoint: 1000,
+        breakpoint: 720,
         settings: {
+          arrows: false,
+          dots: true,
           slidesToShow: 2,
+          slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 400,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 1,
+          autoplay: true,
+          autoplaySpeed: 5000,
+        },
+      },
+    ],
+  });
+
+  $('.reviewer-list').slick({
+  
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fas fa-chevron-left"></i></button>`,
+    nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fas fa-chevron-right"></i></button>`,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 770,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
-        },
-      },
-    ],
-  });
-
-  $('.tab-content').slick({
-    infinite: true,
-
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: false,
-    responsive: [
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 3,
           slidesToScroll: 1,
-          autoplay: false,
-          autoplaySpeed: 2000,
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 2,
+          dots: true,
+          arrows: false,
         },
       },
     ],
   });
-});
-
-// Handle back to top when user scrolls
-const backToTopLink = document.querySelector('.back-to-top');
-window.addEventListener('scroll', () => {
-  const scrollY = window.pageYOffset;
-  if (scrollY > 200) {
-    backToTopLink.classList.add(activeClass);
-  } else {
-    backToTopLink.classList.remove(activeClass);
-  }
-});
-
-// Increase , decrease product quantity
-const iconTimes = document.querySelector('.remove-cart');
-const cartElement = document.querySelector('.cart-desc');
-const productCount = document.querySelector('.product-count');
-iconTimes?.addEventListener('click', () => {
-  cartElement.textContent = 'Không có sản phẩm nào.';
-  productCount.textContent = '0';
-});
-
-const increaseElement = document.querySelector('.increase');
-const decreaseElement = document.querySelector('.decrease');
-const productQuantity = document.querySelector('.product-quantity input');
-
-increaseElement.addEventListener('click', () => {
-  productQuantity.value++;
-  productCount.textContent = productQuantity.value;
-});
-decreaseElement.addEventListener('click', () => {
-  if (parseInt(productQuantity.value) === 0) return;
-  productQuantity.value--;
-  productCount.textContent = productQuantity.value;
 });

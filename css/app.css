@@ -1,23 +1,15 @@
 @import './reset.css';
 @import './global.css';
+
 @import './header.css';
-@import './category.css';
-@import './reason.css';
-@import './tab.css';
-@import './timeOpen.css';
-@import './picture.css';
-@import './news.css';
+@import './banner.css';
+@import './intro.css';
+@import './product.css';
+@import './reviewer.css';
+@import './contact.css';
+@import './sharing.css';
 
 @import './footer.css';
-@import './reset.css';
-@import './reset.css';
 
-@font-face {
-  font-family: 'UTM Bebas';
-  src: url('../fonts/UTMBebas.ttf');
-}
-:root {
-  --gray-dark: #282828;
-  --green-dark: #4d8a54;
-  --white-color: #fff;
-}
+
+

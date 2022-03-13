@@ -1,0 +1,25 @@
+/* .banner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+.banner-list .slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 0 15px;
+  margin-top: 30px;
+}
+.banner-list .slick-dots li button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background: #dde0e4;
+  cursor: pointer;
+  border-radius: 100rem;
+  transition: 0.25s all ease-in-out;
+}
+.banner-list .slick-dots li.slick-active button {
+  width: 45px;
+  background: #f53838;
+}

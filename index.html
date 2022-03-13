@@ -4,880 +4,399 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/app.css" />
-    <title>Tea house</title>
+    <title>Logo</title>
   </head>
   <body>
+    <div id="fb-root"></div>
     <div class="wrapper">
       <header class="header">
-        <div class="header-top">
+        <div class="header-heading">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-6 col-md-12">
-                <div class="header-contact">
-                  <span>
-                    <i class="fa-solid fa-phone"></i> Hotline: <a href="tel:19006750" class="phone-number">1900 6750</a>
-                  </span>
-                </div>
+            <div class="header-top">
+              <div class="header-contact">
+                <p class="header-location">
+                  <i class="fas fa-map-marker-alt"></i> Đội 2, Xã Bảo Hiệu, Huyện Yên Thuỷ, Tỉnh Hòa Bình, Việt Nam
+                </p>
+                <a href="tel:0906 005 669" class="phone"><i class="fas fa-phone-alt"></i> 0906 005 669</a>
+                <p class="email"><i class="fas fa-envelope"></i> luongvietco@gmail.com</p>
               </div>
-              <div class="col-lg-6 col-md-12">
-                <div class="header-actions">
-                  <div class="header-search">
-                    <a href="#" class="search"><i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm</a>
-                    <form action="" class="form-submit">
-                      <input type="text" placeholder="Tim kiem..." />
-                      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                  </div>
-                  <div class="header-account">
-                    <a href="#" class="account"><i class="fa-solid fa-user"></i> Tài khoản</a>
-                    <ul class="menu">
-                      <li class="menu-item">
-                        <a href="#" class="menu-link">Đăng nhập</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="#" class="menu-link">Đăng ký</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="header-cart">
-                    <span class="product-count">1</span>
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i> <span class="cart">Giỏ hàng</span></a>
-                    <!-- if product-count = 0 , show (1)-->
-                    <!-- <div class="cart-desc">Không có sản phẩm nào.</div> (1)-->
-                    <!-- if product-count > 0 -->
-                    <div class="cart-desc">
-                      <div class="product-info">
-                        <span class="remove-cart"><i class="fa-solid fa-xmark"></i></span>
-                        <a class="product-img" href="#">
-                          <img src="./images/5.jpg" alt="Product image" />
-                        </a>
-                        <div class="product-desc">
-                          <h3 class="product-name">
-                            <a href="#" title="Trà việt quất">Trà việt quất</a>
-                          </h3>
-                          <p class="price">40.000₫</p>
-                          <div class="product-quantity">
-                            <input type="text" placeholder="" value="1"   />
-                            <button class="increase">+</button>
-                            <button class="decrease">-</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="total-money">
-                        <h3 class="title">Tổng cộng:</h3>
-                        <span class="total">40.000₫</span>
-                      </div>
-                      <div class="payment">
-                        <a href="#" class="payment-link"><i class="fa-solid fa-basket-shopping"></i> Tới giỏ hàng và thanh toán</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="header-social">
+                <a href="#" class="list-link">
+                  <img src="./images/facebook.png" alt="" />
+                </a>
+                <a href="#" class="list-link">
+                  <img src="./images/google+.png" alt="" />
+                </a>
+                <a href="#" class="list-link">
+                  <img src="./images/skype.png" alt="" />
+                </a>
+                <a href="#" class="list-link">
+                  <img src="./images/twitter.png" alt="" />
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <ul class="header-menu">
-          <li class="menu-item"><a href="#" class="menu-link">Trang chủ</a></li>
+        <div class="container">
+          <div class="header-bottom">
+            <div class="header-logo">
+              <img src="./images/Logo.png" alt="Logo images" />
+            </div>
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="#" class="menu-link">trang chủ</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">giới thiệu <span class="toggle-menu"></span></a>
 
-          <li class="menu-item"><a href="#" class="menu-link">Giới thiệu</a></li>
-          <li class="menu-item">
-            <a href="#" class="menu-link">Sản phẩm</a>
-            <ul class="menu-child">
-              <li class="menu-item"><a href="#" class="menu-link">Cà phê </a></li>
-
-              <li class="menu-item"><a href="#" class="menu-link">Bánh ngọt</a></li>
-              <li class="menu-item"><a href="#" class="menu-link">Smoothies</a></li>
-
-              <li class="menu-item"><a href="#" class="menu-link">Trà hoa quả</a></li>
+                <ul class="menu-child">
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Chính sách đổi hàng</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">FAQ</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Hướng dẫn thanh toán</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Chính sách vận chuyển</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Hệ thống cửa hàng</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">sản phẩm <span class="toggle-menu"></span></a>
+                <ul class="menu-child">
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Nước uống lavie</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Nước khoáng</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Nước ngọt</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">Nước uống aquavila</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">tư vấn</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">tin tức</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">tuyển dụng</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">Liên hệ</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">
+                  <img src="./images/search-icon.png" alt="" />
+                </a>
+              </li>
             </ul>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link">
-              <img src="./images/logo.png" alt="Logo" />
-            </a>
-          </li>
-          <li class="menu-item"><a href="#" class="menu-link">Tin tức</a></li>
-          <li class="menu-item"><a href="#" class="menu-link">Thực đơn</a></li>
-          <li class="menu-item">
-            <a href="#" class="menu-link">Liên hệ</a>
-          </li>
-        </ul>
-      </header>
-      <header class="header-mobile">
-        <div class="container-fluid">
-          <div class="header-top">
             <div class="menu-toggle">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-            <img src="./images/logo_mobi.png" alt="Logo" />
-            <div class="header-cart">
-              <a href="#"><span class="count">0</span><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
-              <!-- <div class="cart-desc">Không có sản phẩm nào.</div> -->
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
-          <div class="header-search">
-            <input type="text" placeholder="Tìm sản phẩm bạn mong muốn..." />
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-          </div>
-          <ul class="menu">
-            <li class="menu-item">
-              <span> <a href="#" class="menu-link">Đăng nhập</a> / <a href="#" class="menu-link">Đăng ký</a></span>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link">Trang chủ</a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link">Giới thiệu</a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link">Sản phẩm</a>
-              <span class="toggle-menu"> <i class="fa-solid fa-plus"></i></span>
-
-              <ul class="menu-child">
-                <li class="menu-item"><a href="#" class="menu-link">Cà phê</a></li>
-
-                <li class="menu-item"><a href="#" class="menu-link">Bánh ngọt</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">Smoothies</a></li>
-
-                <li class="menu-item"><a href="#" class="menu-link">Trà hoa quả</a></li>
-              </ul>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link">Tin tức</a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link">Thực đơn</a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link">Liên hệ</a>
-            </li>
-          </ul>
         </div>
       </header>
-      <section class="slider">
-        <div class="slider-list">
-          <div class="slider-item">
-            <img src="./images/slider_1.jpg" alt="" />
+      <section class="banner">
+        <div class="banner-list">
+          <div class="banner-item">
+            <img src="./images/slide.png" alt="" />
           </div>
-          <div class="slider-item">
-            <img src="./images/slider_1.jpg" alt="" />
+          <div class="banner-item">
+            <img src="./images/slide.png" alt="" />
+          </div>
+          <div class="banner-item">
+            <img src="./images/slide.png" alt="" />
           </div>
         </div>
       </section>
-      <section class="category">
+      <section class="intro">
         <div class="container">
-          <div class="category-heading">
-            <img src="./images/title_base_m.png" alt="" />
-            <h3 class="category-title">Danh mục sản phẩm</h3>
+          <div class="text-heading">
+            CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI VIỆT - <span>Đơn vị cung cấp nước khoáng tín số 1</span>
           </div>
-          <div class="category-list">
-            <div class="category-item">
-              <img src="./images/sec_category_1.jpg" alt="" />
-              <p class="category-name">Danh mục 1</p>
-            </div>
-            <div class="category-item">
-              <img src="./images/sec_category_2.jpg" alt="" />
-              <p class="category-name">Danh mục 2</p>
-            </div>
-            <div class="category-item">
-              <img src="./images/sec_category_3.jpg" alt="" />
-              <p class="category-name">Danh mục 3</p>
-            </div>
-            <div class="category-item">
-              <img src="./images/sec_category_4.jpg" alt="" />
-              <p class="category-name">Danh mục 4</p>
-            </div>
-            <div class="category-item">
-              <img src="./images/sec_category_5.jpg" alt="" />
-              <p class="category-name">Danh mục 5</p>
-            </div>
-            <div class="category-item">
-              <img src="./images/sec_category_6.jpg" alt="" />
-              <p class="category-name">Danh mục 6</p>
-            </div>
-            <div class="category-item">
-              <img src="./images/sec_category_1.jpg" alt="" />
-              <p class="category-name">Danh mục 7</p>
-            </div>
-            <div class="category-item">
-              <img src="./images/sec_category_2.jpg" alt="" />
-              <p class="category-name">Danh mục 8</p>
-            </div>
-            <div class="category-item">
-              <img src="./images/sec_category_3.jpg" alt="" />
-              <p class="category-name">Danh mục 9</p>
-            </div>
-            <div class="category-item">
-              <img src="./images/sec_category_4.jpg" alt="" />
-              <p class="category-name">Danh mục 10</p>
+          <div class="product-list">
+            <div class="row">
+              <div class="col-sm-4 col-4">
+                <a class="product-item" href="#">
+                  <div class="product-img">
+                    <img src="./images/product-1.png" alt="Product img" />
+                    <button class="view-more">Xem thêm</button>
+                  </div>
+                  <div class="desc">Nước khoáng</div>
+                </a>
+              </div>
+              <div class="col-sm-4 col-4">
+                <a class="product-item" href="#">
+                  <div class="product-img">
+                    <img src="./images/product-2.png" alt="Product img" />
+                    <button class="view-more">Xem thêm</button>
+                  </div>
+                  <div class="desc">Nước uống tinh khiết</div>
+                </a>
+              </div>
+              <div class="col-sm-4 col-4">
+                <a class="product-item" href="#">
+                  <div class="product-img">
+                    <img src="./images/product-3.png" alt="Product img" />
+                    <button class="view-more">Xem thêm</button>
+                  </div>
+                  <div class="desc">Nước uống đóng chai</div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+        <div class="bg-intro">
+          <div class="bg-img">
+            <img src="./images/bg-intro-2.png" alt="" />
+          </div>
+          <div class="container">
+            <div class="text-desc">
+              <div class="text">
+                <h3 class="title">khoáng việt</h3>
+                <p class="desc">Đơn vị cung cấp uy tín số 1</p>
+                <p class="desc">Sản phẩm của chúng tôi luôn sạch sẽ ,tinh khiết</p>
+              </div>
 
-      <section class="reason">
+              <button class="btn-blue">tìm hiểu</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="reason-heading">
-                <img src="./images/title_base_m.png" alt="tea house" />
-                <h3 class="reason-title">Tại sao chọn chúng tôi</h3>
-                <p class="desc">
-                  Với những nghệ nhân rang tâm huyết và đội ngũ tài năng cùng những câu chuyện trà đầy cảm hứng, ngôi
-                  nhà Tea House là không gian dành riêng cho những ai trót yêu say đắm hương vị của những lá trà tuyệt
-                  hảo.
+          <div class="text-heading">Sản phẩm nổi bật</div>
+          <div class="product-img-list">
+            <div class="product-item">
+              <div class="product-img">
+                <img src="./images/product-4.png" alt="Img" />
+            
+              </div>
+              <p class="desc" title="Nước khoáng lavie 500ml">Nước khoáng lavie 500ml</p>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <img src="./images/product-5.png" alt="Img" />
+             
+              </div>
+              <p class="desc" title="Thùng nước khoáng aquavila 500ml">thúng Nước khoáng aquavila 500ml</p>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <img src="./images/product-6.png" alt="Img" />
+              
+              </div>
+              <p class="desc" title="Bột củ mài">Bột củ mài</p>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <img src="./images/product-4.png" alt="" />
+              </div>
+              <p class="desc" title="Nước khoáng lavie 1500ml">Nước khoáng lavie 1500ml</p>
+            </div>
+            <div class="product-item">
+              <div class="product-img">
+                <img src="./images/product-5.png" alt="" />
+              </div>
+              <p class="desc" title="Nước khoáng lavie 5000ml">Nước khoáng lavie 5000ml</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviewer">
+        <div class="container">
+          <div class="text-heading">Nhận xét của khách hàng</div>
+          <div class="reviewer-list">
+            <div class="reviewer-item">
+              <div class="reviewer-img">
+                <img src="./images/reviews-1.png" alt="" />
+              </div>
+              <div class="reviewer-text">
+                <p class="reviewer-name">Phan Văn Kiệm</p>
+                <p
+                  class="reviewer-job"
+                  title=" Thầy thuốc ưu tú - BS chuyên khoa cấp 1 nguyên giám đốc bệnh viện y học cổ truyền tỉnh Hòa Bình"
+                >
+                  Thầy thuốc ưu tú - BS chuyên khoa cấp 1 nguyên giám đốc bệnh viện y học cổ truyền tỉnh Hòa Bình
                 </p>
               </div>
-              <div class="reason-list">
-                <div class="reason-item">
-                  <img src="./images/icon_why_1.png" alt="Icon why" />
-                  <div class="reason-desc">
-                    <strong>Hương vị tuyệt hảo</strong>
-                    <p>Những đọt trà được lựa chọn cẩn thận ngay từ lúc đang ngâm mình trong sương</p>
+              <p
+                class="reviewer-desc"
+                title=" Hoài Sơn có mùi thơm đặc biệt, Hoài sơn hay sơn dược vừa là thực phẩm rất bổ dưỡng đồng thời là vị thuốc được sử dụng phổ biến trong y học cổ truyền suốt hơn 2000 năm qua."
+              >
+                Hoài Sơn có mùi thơm đặc biệt, Hoài sơn hay sơn dược vừa là thực phẩm rất bổ dưỡng đồng thời là vị thuốc
+                được sử dụng phổ biến trong y học cổ truyền suốt hơn 2000 năm qua.
+              </p>
+            </div>
+
+            <div class="reviewer-item">
+              <div class="reviewer-img">
+                <img src="./images/reviews-2.png" alt="" />
+              </div>
+              <div class="reviewer-text">
+                <p class="reviewer-name">thầy giáo - lưu hải bằng</p>
+
+                <p class="reviewer-job" title="Trường nghiên cứu võ thuật IVS VoViNam">
+                  Trường nghiên cứu võ thuật IVS VoViNam
+                </p>
+              </div>
+              <p
+                class="reviewer-desc"
+                title="Không ít Hợp tác xã khắp dải đất hình chữ S canh tác cây củ mài hoài sơn, nhưng đa phần là loài chỉ có thể dùng làm thực phẩm chứ không phải loài dùng làm thuốc"
+              >
+                Không ít Hợp tác xã khắp dải đất hình chữ S canh tác cây củ mài hoài sơn, nhưng đa phần là loài chỉ có
+                thể dùng làm thực phẩm chứ không phải loài dùng làm thuốc
+              </p>
+            </div>
+
+            <div class="reviewer-item">
+              <div class="reviewer-img">
+                <img src="./images/reviews-3.png" alt="" />
+              </div>
+              <div class="reviewer-text">
+                <p class="reviewer-name">BS. Nguyễn thị sen</p>
+
+                <p
+                  class="reviewer-job"
+                  title="Bệnh viện đa khoa Cẩm Phả , Quảng Ninh
+                "
+                >
+                  Bệnh viện đa khoa Cẩm Phả , Quảng Ninh
+                </p>
+              </div>
+              <p
+                class="reviewer-desc"
+                title="Với mục tiêu mở rộng thị trường toàn quốc, Lương Việt tiếp tục tuyển Đại lý Cấp 1 hợp tác phân phối sản phẩm HOÀI SƠN CỦ MÀI LƯƠNG VIỆT"
+              >
+                Với mục tiêu mở rộng thị trường toàn quốc, Lương Việt tiếp tục tuyển Đại lý Cấp 1 hợp tác phân phối sản
+                phẩm HOÀI SƠN CỦ MÀI LƯƠNG VIỆT
+              </p>
+            </div>
+            <div class="reviewer-item">
+              <div class="reviewer-img">
+                <img src="./images/reviews-3.png" alt="" />
+              </div>
+              <div class="reviewer-text">
+                <p class="reviewer-name">BS. Nguyễn Văn A</p>
+
+                <p
+                  class="reviewer-job"
+                  title="Bệnh viện đa khoa Cẩm Phả , Quảng Ninh
+                "
+                >
+                  Bệnh viện đa khoa Cẩm Phả , Quảng Ninh
+                </p>
+              </div>
+              <p
+                class="reviewer-desc"
+                title="Với mục tiêu mở rộng thị trường toàn quốc, Lương Việt tiếp tục tuyển Đại lý Cấp 1 hợp tác phân phối sản phẩm HOÀI SƠN CỦ MÀI LƯƠNG VIỆT"
+              >
+                Với mục tiêu mở rộng thị trường toàn quốc, Lương Việt tiếp tục tuyển Đại lý Cấp 1 hợp tác phân phối sản
+                phẩm HOÀI SƠN CỦ MÀI LƯƠNG VIỆT
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contact-img">
+          <img src="./images/contact-bg.png" alt="Contact img" />
+        </div>
+        <div class="contact-text">
+          <div class="contact-heading">Liên hệ làm đại lý</div>
+          <button class="btn-orange">Liên hệ</button>
+        </div>
+      </section>
+      <section class="sharing">
+        <div class="container">
+          <div class="sharing-heading">
+            <h3 class="text-heading">chia sẻ kiến thức bảo vệ sức khỏe</h3>
+            <img src="./images/decoration-1.png" alt="decoration-1" />
+          </div>
+          <div class="post-list">
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="post-item mb-28" >
+                  <div class="post-img post-config">
+                    <img src="./images/product-img.png" alt="" />
+                  </div>
+                  <div class="post-text config">
+                    <h3 class="post-title">Hành trình của nước trong cơ thể và những bí mật sắp được bật mí</h3>
+                    <p class="post-desc">
+                      Thực phẩm sau khi cho vào miệng nó sẽ đi thẳng vào dạ dày thông qua ống dẫn thức ăn và kết thúc
+                      chu trình bằng việc đào thải cặn bã ra khỏi cơ thể. Vậy khi uống nước và...
+                    </p>
+                    <div class="post-action">
+                      <button class="btn-yellow">Chi tiết</button>
+                    </div>
                   </div>
                 </div>
-                <div class="reason-item">
-                  <img src="./images/icon_why_2.png" alt="Icon why" />
-                  <div class="reason-desc">
-                    <strong>Sản phẩm tự nhiên</strong>
-                    <p>Cam kết chỉ cung cấp cà phê có nguồn gốc được kiểm soát chất lượng</p>
+              </div>
+              <div class="col-lg-6 col-md-6" >
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-6">
+                    <div class="post-item mb-28 mt-28">
+                      <div class="post-img posts">
+                        <img src="./images/sharing-1.png" alt="" />
+                      </div>
+                      <div class="post-description post-text">
+                        <h3 class="post-title">Bật mí loại nước uống yêu thích của 12 cung hoàng đạo</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-6">
+                    <div class="post-item mb-28 mt-28">
+                      <div class="post-img posts">
+                        <img src="./images/sharing-2.png" alt="" />
+                      </div>
+                      <div class="post-description post-text">
+                        <h3 class="post-title">Tác hại khôn lường từ nước nhiễm phèn, bạn đã biết?</h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="reason-item">
-                  <img src="./images/icon_why_3.png" alt="Icon why" />
-                  <div class="reason-desc">
-                    <strong>Giá cả phải chăng</strong>
-                    <p>Cam kết chỉ cung cấp cà phê có nguồn gốc được kiểm soát chất lượng</p>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-6">
+                    <div class="post-item">
+                      <div class="post-img posts">
+                        <img src="./images/sharing-3.png" alt="" />
+                      </div>
+                      <div class="post-description post-text">
+                        <h3 class="post-title">Bổ sung nước thế nào để có sức khỏe tốt trong mùa lạnh?</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-6">
+                    <div class="post-item">
+                      <div class="post-img posts">
+                        <img src="./images/sharing-4.png" alt="" />
+                      </div>
+                      <div class="post-description post-text">
+                        <h3 class="post-title">Bí quyết" giúp bạn uống nhiều nước hơn vào mùa đông?</h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="tab">
-        <div class="container">
-          <div class="tab-heading">
-            <h3>Menu hôm nay</h3>
-          </div>
-
-          <div class="tab-list">
-            <button class="tab-item active" data-tab="1">Trà nóng</button>
-            <button class="tab-item" data-tab="2">Trà hoa quả</button>
-            <button class="tab-item" data-tab="3">Smoothies</button>
-            <button class="tab-item" data-tab="4">Bánh ngọt</button>
-          </div>
-
-          <div class="tab-wrapper">
-            <div class="tab-content active" data-tab="1">
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/5.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà Phúc bồn tử</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/6.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà vải</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/7.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà cam đào</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/8.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà táo</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/9.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà việt quất</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/10-a1db977e-32af-492b-8ae1-c3638939b4a7.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà dâu tây</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/11-31738fc1-8b94-4d06-824d-63222f59e4e0.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà xoài</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/12.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà chanh</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="tab-content" data-tab="2">
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/5.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà Phúc bồn tử</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/6.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà vải</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/7.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà cam đào</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/8.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà táo</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/9.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà việt quất</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/10-a1db977e-32af-492b-8ae1-c3638939b4a7.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà dâu tây</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/11-31738fc1-8b94-4d06-824d-63222f59e4e0.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà xoài</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/12.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Trà chanh</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 40.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="tab-content" data-tab="3">
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/1.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#" title="Smoothies chuối dừa">Smoothies chuối dừa</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 55.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/2.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#" title="Smoothies dâu việt quất">Smoothies dâu việt quất</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 55.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/3.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#">Smoothies dâu</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 55.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/4.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#" title="Smoothies dâu chuối">Smoothies dâu chuối</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 55.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="tab-content" data-tab="4">
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/17.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#" title="Bánh cà phê phomai">Bánh cà phê phomai</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 25.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/18.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#" title="Tiramisu">Tiramisu</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 25.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/19.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#" title="Caramel Phomai">Caramel Phomai</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 25.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="tab-drinks">
-                <div class="tab-drink">
-                  <form action="">
-                    <div class="product-thumb">
-                      <a href="#">
-                        <img src="./images/20.jpg" alt="Drink" />
-                      </a>
-                      <button class="add-to-cart" type="submit">Thêm vào giỏ hàng</button>
-                    </div>
-                    <div class="product-info">
-                      <h3 class="name">
-                        <a href="#" title="Bông lan cuộn trà xanh">Bông lan cuộn trà xanh</a>
-                      </h3>
-                      <div class="price">
-                        <span>Giá: <strong> 25.000₫ </strong></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="view-more">
-            <a href="#">Xem thêm <i class="fa-solid fa-chevron-right"></i></a>
-          </div>
-        </div>
-      </section>
-
-      <section class="time-open">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7 col-12 p0">
-              <div class="left-content">
-                <div class="time-heading">
-                  <span class="title">THỜI GIAN MỞ CỬA</span>
-                  <p class="desc">
-                    “Cà phê nhé" - Một lời hẹn rất riêng của người Việt. Một lời ngỏ mộc mạc để mình ngồi lại bên nhau
-                    và sẻ chia câu chuyện của riêng mình.
-                  </p>
-                </div>
-                <div class="time-bottom">
-                  <span class="time">T2 - T6: 8h30 - 21h30</span>
-                  <span class="time">T7 - CN: 8h00 - 22h00</span>
-
-                  <a class="action" href="#">Đặt bàn ngay</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <div class="right-content">
-                <!-- <img src="./images/banner_time_open.jpg" alt=""> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="news">
-        <div class="container">
-          <div class="news-heading">
-            <span>
-              <a href="#"> Tin tức nổi bật</a>
-            </span>
-          </div>
-          <div class="news-list">
-            <div class="news-item">
-              <a class="news-image" href="#">
-                <img src="./images/untitled-1.jpg" alt="" />
-              </a>
-
-              <h3 class="title">
-                <a href="#"> Dùng cốc giấy đựng cà phê nóng, thứ bạn uống đầy ắp những thứ đáng sợ này</a>
-              </h3>
-              <p class="desc">
-                Đối với nhiều người, một ngày mới chỉ có thể khởi đầu tốt đẹp bằng một tách cà phê nóng. Nhờ cafein, bộ
-                não dường như không thể nhận được tín hiệu "mệt mỏi", từ đó tạo cho con người ta một nguồn n...
-              </p>
-            </div>
-            <div class="news-item">
-              <a class="news-image" href="#">
-                <img src="./images/untitled-5.jpg" alt="" />
-              </a>
-              <h3 class="title">
-                <a href="#"> Dùng cốc giấy đựng cà phê nóng, thứ bạn uống đầy ắp những thứ đáng sợ này</a>
-              </h3>
-              <p class="desc">
-                Đối với nhiều người, một ngày mới chỉ có thể khởi đầu tốt đẹp bằng một tách cà phê nóng. Nhờ cafein, bộ
-                não dường như không thể nhận được tín hiệu "mệt mỏi", từ đó tạo cho con người ta một nguồn n...
-              </p>
-            </div>
-            <div class="news-item">
-              <a class="news-image" href="#">
-                <img src="./images/untitled-3.jpg" alt="" />
-              </a>
-              <h3 class="title">
-                <a href="#"> Dùng cốc giấy đựng cà phê nóng, thứ bạn uống đầy ắp những thứ đáng sợ này</a>
-              </h3>
-              <p class="desc">
-                Đối với nhiều người, một ngày mới chỉ có thể khởi đầu tốt đẹp bằng một tách cà phê nóng. Nhờ cafein, bộ
-                não dường như không thể nhận được tín hiệu "mệt mỏi", từ đó tạo cho con người ta một nguồn n...
-              </p>
-            </div>
-            <div class="news-item">
-              <a class="news-image" href="#">
-                <img src="./images/untitled-5.jpg" alt="" />
-              </a>
-              <h3 class="title">
-                <a href="#"> Dùng cốc giấy đựng cà phê nóng, thứ bạn uống đầy ắp những thứ đáng sợ này</a>
-              </h3>
-              <p class="desc">
-                Đối với nhiều người, một ngày mới chỉ có thể khởi đầu tốt đẹp bằng một tách cà phê nóng. Nhờ cafein, bộ
-                não dường như không thể nhận được tín hiệu "mệt mỏi", từ đó tạo cho con người ta một nguồn n...
-              </p>
-            </div>
-            <div class="news-item">
-              <a class="news-image" href="#">
-                <img src="./images/untitled-6.jpg" alt="" />
-              </a>
-              <h3 class="title">
-                <a href="#"> Dùng cốc giấy đựng cà phê nóng, thứ bạn uống đầy ắp những thứ đáng sợ này</a>
-              </h3>
-              <p class="desc">
-                Đối với nhiều người, một ngày mới chỉ có thể khởi đầu tốt đẹp bằng một tách cà phê nóng. Nhờ cafein, bộ
-                não dường như không thể nhận được tín hiệu "mệt mỏi", từ đó tạo cho con người ta một nguồn n...
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="picture">
-        <div class="picture-list">
-          <div class="picture-item">
-            <img src="./images/picture_1.jpg" alt="Picture" />
-          </div>
-          <div class="picture-item">
-            <img src="./images/picture_2.jpg" alt="Picture" />
-          </div>
-          <div class="picture-item">
-            <img src="./images/picture_3.jpg" alt="Picture" />
-          </div>
-          <div class="picture-item">
-            <img src="./images/picture_4.jpg" alt="Picture" />
-          </div>
-          <div class="picture-item">
-            <img src="./images/picture_5.jpg" alt="Picture" />
           </div>
         </div>
       </section>
@@ -885,75 +404,125 @@
         <div class="container">
           <div class="footer-top">
             <div class="row">
-              <div class="col-lg-4 col-md-12">
-                <div class="footer-logo">
-                  <img src="./images/logo.png" alt="Logo" />
-                  <p class="desc">
-                    Chúng tôi mong muốn Tea House sẽ trở thành “Nhà Trà", nơi mọi người xích lại gần nhau và tìm thấy
-                    niềm vui, sự sẻ chia thân tình bên những tách cà phê đượm hương, chất lượng.
-                  </p>
+              <div class="col-md-3 col-sm-6 col-5">
+                <div class="footer-menu">
+                  <h3 class="title">Hỗ trợ</h3>
                   <ul class="menu">
                     <li class="menu-item">
-                      <a href="#" class="menu-link"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#" class="menu-link">Trang chủ</a>
                     </li>
                     <li class="menu-item">
-                      <a href="#" class="menu-link"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#" class="menu-link">Sản phẩm</a>
                     </li>
                     <li class="menu-item">
-                      <a href="#" class="menu-link"><i class="fa-brands fa-pinterest-p"></i></a>
+                      <a href="#" class="menu-link">Tin tức</a>
                     </li>
                     <li class="menu-item">
-                      <a href="#" class="menu-link"><i class="fa-brands fa-google-plus-g"></i></a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="#" class="menu-link"><i class="fa-brands fa-youtube"></i></a>
+                      <a href="#" class="menu-link">Liên hệ</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="footer-contact">
-                  <h3 class="title">
-                    <a href="#"> Liên hệ với chúng tôi </a>
-                  </h3>
-                  <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span> Tâng 6 toà nhà Ladeco, 266 Đội Cấn, phường Liễu Giai, Hà Nội, Vietnam </span>
-                  </div>
-                  <div class="phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <div>
-                      <span> Hotline đặt bàn: <a href="tel:1900 6750" class="phone-number">19006750</a></span>
-                      <br />
-                      <span>Hotline giao hàng: <a href="tel:1900 6750" class="phone-number">19006750</a></span>
-                    </div>
-                  </div>
+              <div class="col-md-3 col-sm-6 col-7">
+                <div class="footer-menu">
+                  <h3 class="title">Hướng dẫn</h3>
+                  <ul class="menu">
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Hướng dẫn mua hàng</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Hướng dẫn thanh toán</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="footer-register">
-                  <h3 class="title">
-                    <a href="#"> Đăng ký nhận khuyến mãi </a>
-                  </h3>
-                  <p class="desc">Đừng bỏ lỡ những sản phẩm và chương trình khuyến mãi hấp dẫn</p>
-                  <form action="" class="form-submit">
-                    <div class="input-form">
-                      <input type="text" placeholder="Email của bạn" />
-                      <button type="submit">Đăng ký</button>
-                    </div>
-                  </form>
+              <div class="col-md-3 col-sm-6 col-5 w100">
+                <div class="footer-menu">
+                  <h3 class="title">Chính sách</h3>
+                  <ul class="menu">
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Chính sách vận chuyển</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Chính sách đổi trả</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Chính sách bảo hành</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Chính sách bảo mật</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-7 w100">
+                <div class="footer-menu">
+                  <h3 class="title">Facebook</h3>
+                  <div
+                    class="fb-page"
+                    data-href="https://www.facebook.com/facebook"
+                    data-tabs="timeline"
+                    data-width="270"
+                    data-height="180"
+                    data-small-header="false"
+                    data-adapt-container-width="true"
+                    data-hide-cover="false"
+                    data-show-facepile="true"
+                  >
+                    <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+                      <a href="https://www.facebook.com/facebook">Meta</a>
+                    </blockquote>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="footer-copyright">© Bản quyền thuộc về Cafein Team | Cung cấp bởi <a href="#">Sapo</a></div>
+          <div class="footer-mid">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="footer-contact">
+                  <h3 class="title">Bản đồ</h3>
+                  <h3 class="title">CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI VIỆT</h3>
+                  <div class="footer-info">
+                    <span>Địa chỉ:</span> Đội 2, Xã Bảo Hiệu, Huyện Yên Thuỷ, Tỉnh Hòa Bình, Việt Nam
+                  </div>
+                  <div class="footer-info"><span>Điện thoại:</span> 0906 055 669</div>
+                  <div class="footer-info"><span>Email:</span> luongvietco@gmail.com</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="footer-map">
+                  <div class="title">bản đồ</div>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.970697771365!2d106.67281841424193!3d20.832889699813553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a70806bd25073%3A0xd3fa253b8712cbb7!2zMzkyIFRoacOqbiBMw7RpLCBWxKluaCBOaeG7h20sIEzDqiBDaMOibiwgSOG6o2kgUGjDsm5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1647050578230!5m2!1svi!2s"
+                    width="330"
+                    height="200"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copy-right">Bản quyền thuộc về luongviet.com.vn</div>
         </div>
       </footer>
-      <a href="#" class="back-to-top"><i class="fa-solid fa-angle-up"></i></a>
     </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script src="./js/fontAwesome.min.js" crossorigin="anonymous"></script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0&appId=750255012395751&autoLogAppEvents=1"
+      nonce="nI3qxGnT"
+    ></script>
+
+   
     <script src="./js/app.js"></script>
   </body>
 </html>

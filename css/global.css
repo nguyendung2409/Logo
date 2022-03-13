@@ -1,32 +1,65 @@
+@font-face {
+  font-family: 'Roboto-regular';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: 'Roboto-medium';
+  src: url('../fonts/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: 'Roboto-black';
+  src: url('../fonts/Roboto-Black.ttf');
+}
+@font-face {
+  font-family: 'Roboto-bold';
+  src: url('../fonts/Roboto-Bold.ttf');
+}
+@font-face {
+  font-family: 'Roboto-light';
+  src: url('../fonts/Roboto-Light.ttf');
+}
+@font-face {
+  font-family: 'VLBoosterNextFY-Black';
+  src: url('../fonts/VL_BoosterNextFY-Black.otf');
+}
+@font-face {
+  font-family: 'VL-PICASTRO-BOLDBLADE';
+  src: url('../fonts/VL-PICASTRO-BOLDBLADE.OTF');
+}
+@font-face {
+  font-family: 'VL_Kaleko-bold';
+  src: url('../fonts/VL_Kaleko-round-Bold.otf');
+}
+@font-face {
+  font-family: 'UVNVan';
+  src: url('../fonts/UVNVan.ttf');
+}
+@font-face {
+  font-family: 'KVArial-bold';
+  src: url('../fonts/KV-Arial-Bold.ttf');
+}
+@font-face {
+  font-family: 'KVArial-italic';
+  src: url('../fonts/KV-Arial-Italic.ttf');
+}
+@font-face {
+  font-family: 'KVArial-regular';
+  src: url('../fonts/KV-Arial-Regular.ttf');
+}
+
 body {
-  /* line-height: 1.7; */
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto-regular';
   font-size: 14px;
   font-weight: 400;
+  color: #fff;
 }
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  
 }
-.back-to-top {
-  visibility: hidden;
-  color: var(--white-color);
-  width: 36px;
-  height: 36px;
-  border-radius: 100rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  background-color: #000;
+.text-heading {
+  color: #01446d;
+  font-size: 24px;
+  text-transform: uppercase;
 }
-.back-to-top.is-show {
-  visibility: visible;
-}
-.back-to-top:hover {
-  color: var(--white-color);
-  background-color: var(--green-dark);
-}
+
