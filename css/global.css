@@ -63,12 +63,15 @@ body {
   position: fixed;
   bottom: 80px;
   right: 20px;
+  z-index: 99;
   background-color: #000;
 }
 .back-to-top.is-show {
   visibility: visible;
 }
 .back-to-top:hover {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.301);
+  color: #000;
+  background-color: #fff;
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ 
 }
