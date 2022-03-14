@@ -61,7 +61,6 @@ $(document).ready(function () {
   });
 
   $('.reviewer-list').slick({
-  
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
@@ -90,4 +89,14 @@ $(document).ready(function () {
       },
     ],
   });
+});
+// Handle back to top when user scrolls
+const backToTopLink = document.querySelector('.back-to-top');
+window.addEventListener('scroll', () => {
+  const scrollY = window.pageYOffset;
+  if (scrollY > 200) {
+    backToTopLink.classList.add(activeClass);
+  } else {
+    backToTopLink.classList.remove(activeClass);
+  }
 });

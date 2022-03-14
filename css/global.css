@@ -51,4 +51,24 @@ body {
   font-size: 24px;
   text-transform: uppercase;
 }
-
+.back-to-top {
+  visibility: hidden;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #000;
+}
+.back-to-top.is-show {
+  visibility: visible;
+}
+.back-to-top:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.301);
+}
