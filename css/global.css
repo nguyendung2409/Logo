@@ -34,18 +34,7 @@
   font-family: 'UVNVan';
   src: url('../fonts/UVNVan.ttf');
 }
-@font-face {
-  font-family: 'KVArial-bold';
-  src: url('../fonts/KV-Arial-Bold.ttf');
-}
-@font-face {
-  font-family: 'KVArial-italic';
-  src: url('../fonts/KV-Arial-Italic.ttf');
-}
-@font-face {
-  font-family: 'KVArial-regular';
-  src: url('../fonts/KV-Arial-Regular.ttf');
-}
+
 
 body {
   font-family: 'Roboto-regular';
