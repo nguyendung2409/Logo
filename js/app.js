@@ -100,3 +100,18 @@ window.addEventListener('scroll', () => {
     backToTopLink.classList.remove(activeClass);
   }
 });
+// Hide / show search form
+
+const iconSearch = document.querySelector('.menu > .menu-item:last-child > .menu-link');
+const searchForm = document.querySelector('.search-form');
+const removeSearchForm = document.querySelector('.hide-searchForm');
+console.log(removeSearchForm);
+iconSearch?.addEventListener('click', () => {
+  searchForm.classList.toggle(activeClass);
+  menu.classList.remove(activeClass);
+  iconBars.classList.remove(activeClass);
+});
+
+removeSearchForm.addEventListener('click', () => {
+  searchForm.classList.remove(activeClass);
+});
